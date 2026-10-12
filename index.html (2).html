@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>국민대 가상대학 eCampus | 어디서든 열리는 내 강의실</title>
+<meta name="description" content="국민대학교 가상대학 eCampus: 동영상 강의, 출석, 과제, 토론, 일정까지 한곳에서. 접속 방법과 개강 준비 체크리스트를 확인하세요.">
+<meta property="og:title" content="국민대 가상대학 eCampus">
+<meta property="og:description" content="동영상 강의부터 출석·과제·일정까지, 내 강의실을 한곳에서.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('kmu-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div id="bar"></div>
+<header><div class="wrap nav">
+ <a class="logo" href="#top">국민대 <b>가상대학</b></a>
+ <ul><li><a href="#features">기능</a></li><li><a href="#access">접속</a></li><li><a href="#ready">개강 준비</a></li><li><a href="#faq">FAQ</a></li></ul>
+ <button class="icon-btn" id="theme" aria-label="테마 전환">🌓</button>
+ <a class="btn" href="https://ecampus.kookmin.ac.kr/" target="_blank" rel="noopener">입장하기</a>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <span class="tag">KOOKMIN UNIVERSITY · eCampus</span>
+  <h1><span id="type">어디서든</span><span class="caret"></span><br>열려 있는 내 강의실</h1>
+  <p class="lead">국민대 가상대학 eCampus는 내가 수강하는 강의를 가상의 공간으로 옮겨 놓은 시스템이에요. 영상 강의부터 출석, 과제, 일정까지 한 화면에서 챙겨 보세요.</p>
+  <div class="cta">
+   <a class="btn" href="https://ecampus.kookmin.ac.kr/" target="_blank" rel="noopener">eCampus 입장하기 →</a>
+   <a class="btn ghost" href="#ready">개강 준비 체크하기</a>
+  </div>
+ </div>
+ <div class="stage" aria-hidden="true">
+  <div class="fcard"><i>📹</i><div>동영상 학습<small>진도 자동 관리</small></div></div>
+  <div class="fcard"><i>✅</i><div>출석 관리<small>한눈에 확인</small></div></div>
+  <div class="fcard"><i>🗓️</i><div>강좌별 일정<small>마감 놓치지 않기</small></div></div>
+ </div>
+</div>
+
+<div class="ticker" aria-hidden="true"><div id="tk"></div></div>
+
+<section id="features"><div class="wrap rv">
+ <h2>눌러서 확인해 보세요</h2>
+ <p class="sub">eCampus에서는 이런 활동을 할 수 있어요.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+ <div class="panel"><div><h3 id="pt"></h3><p id="pd"></p></div><div class="mock" id="pm"></div></div>
+ <p class="sub" style="margin:10px 0 0;font-size:12px">※ 화면은 이해를 돕기 위한 예시입니다.</p>
+</div></section>
+
+<section id="access"><div class="wrap rv">
+ <h2>접속은 어렵지 않아요</h2>
+ <p class="sub">PC에서도, 앱에서도 같은 강의실로 들어갑니다.</p>
+ <div class="two">
+  <div class="card"><div class="ic">🌐</div><h3>바로 접속</h3><p><code>ecampus.kookmin.ac.kr</code>에 접속해 ON국민 통합ID로 로그인하세요.</p></div>
+  <div class="card"><div class="ic">🚪</div><h3>포털에서 접속</h3><p>ON국민 포털(<code>portal.kookmin.ac.kr</code>)에 로그인한 뒤 상단의 eCampus를 누르면 돼요.</p></div>
+  <div class="card"><div class="ic">📱</div><h3>모바일 앱</h3><p>앱스토어·플레이스토어에서 ‘국민대학교 eCampus’를 검색해 설치하세요. 강좌 조회, 출석, 메시지를 지원합니다.</p></div>
+ </div>
+</div></section>
+
+<section id="ready"><div class="wrap rv">
+ <h2>개강 준비 체크리스트</h2>
+ <p class="sub">하나씩 체크하다 보면 준비 끝! (체크 상태는 이 브라우저에 저장돼요)</p>
+ <div class="check">
+  <div>
+   <div class="meter"><svg viewBox="0 0 180 180" width="180" height="180"><defs><linearGradient id="g"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><circle class="bg" cx="90" cy="90" r="75"/><circle class="fg" id="ring" cx="90" cy="90" r="75"/></svg><strong id="pct">0%</strong></div>
+   <p id="msg"></p>
+  </div>
+  <ul id="list"></ul>
+ </div>
+</div></section>
+
+<section id="faq"><div class="wrap rv">
+ <h2>자주 묻는 질문</h2>
+ <p class="sub">막히기 쉬운 부분만 모았어요.</p>
+ <details><summary>로그인이 안 돼요</summary><p>ON국민 포털에서 사용자 등록(통합ID 발급)을 먼저 해야 서비스를 이용할 수 있어요. 등록한 통합ID와 비밀번호로 로그인하세요.</p></details>
+ <details><summary>모바일로 수강해도 되나요?</summary><p>앱으로 강좌 조회와 영상 학습이 가능해요. 다만 학교 공지에서 모바일 수강 시 수강률 오류가 생길 수 있어 가급적 PC 수강을 권장한 적이 있으니, 중요한 강의는 PC로 확인해 보세요.</p></details>
+ <details><summary>지난 학기 강의는 어디서 보나요?</summary><p>eCampus 로그인 후 강좌 목록 우측 상단의 ‘과거강좌조회’를 이용하세요.</p></details>
+ <details><summary>실시간 화상 수업은 어떻게 들어가요?</summary><p>강의실에서 ‘화상강의’를 눌러 안내에 따라 화상강의 프로그램을 설치하면 돼요. 수업에 따라 도구가 다를 수 있으니 교수님 공지를 확인하세요.</p></details>
+ <details><summary>사용법이 막막해요</summary><p>eCampus 로그인 후 이용안내 → 매뉴얼 → 학생 매뉴얼을 확인하세요. 안내 포털은 <code>kookmin.kr/lmsguide</code>에서도 볼 수 있어요.</p></details>
+</div></section>
+
+<section><div class="wrap rv"><div class="final">
+ <h2>수업, 이제 내 손안에서</h2>
+ <p>지금 eCampus에 접속해 이번 학기 강의실을 확인해 보세요.</p>
+ <a class="btn" href="https://ecampus.kookmin.ac.kr/" target="_blank" rel="noopener">eCampus 입장하기 →</a>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">비공식 홍보 페이지입니다. 국민대학교 공개 안내와 eCampus 학생 매뉴얼을 참고해 구성했으며, 최신 정보는 <a href="https://ecampus.kookmin.ac.kr/" target="_blank" rel="noopener">eCampus</a>와 학교 공지를 확인하세요.</div></footer>
+<canvas id="fx"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
